@@ -1,0 +1,1 @@
+webpackJsonp([2],{20:function(e,n,i){"use strict";var t=i(10),s=(i(9),i(2),t.ItemView.extend({template:!1,options:{},ui:{},events:{},initialize:function(e){this.mergeOptions(e,["app"]),this.listenTo(this.app.channel.vent,"window:resize",this.onResize)},onRender:function(){},onResize:function(){}}));e.exports=s}});

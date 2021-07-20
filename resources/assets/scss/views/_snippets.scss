@@ -1,0 +1,104 @@
+.snippet {
+    display:table;
+    width:100%;
+    height: auto;
+}
+
+.snippet-thumbnail {
+    display:table-cell;
+    vertical-align: top;
+    width:10%;
+    max-width: 56px;
+    height: 100%;
+    
+    .image {
+        width:100%;
+        max-width: 90px;
+        min-width: 60px;
+        display:block;
+        padding:0;
+        margin:0 auto;
+        height: 100%;
+        background-color: $gray-lighter;
+    }
+    
+    .icon {
+        font-size:30px;
+        text-align:center;
+    }
+    
+    img.image {
+        height: auto;
+    }
+}
+
+.snippet-caption {
+    display:table-cell;
+    vertical-align: middle;
+    width:100%;
+    
+    .small {
+        color: $gray-light;
+    }
+    
+    h4 {
+        font-size: $font-size-base;
+        margin:0;
+        padding:0;
+        font-weight:bold;
+        margin-bottom: 5px;
+    }
+    
+    div {
+        margin-bottom: 3px;
+    }
+    
+    $font-size: 14px;
+    $line-height: 1.4;
+    .description {
+        font-size: $font-size;
+        line-height: $line-height;
+    }
+}
+
+.snippet-with-thumbnail {
+    .snippet-caption {
+        width:70%;
+        padding-left:10px;
+    }
+}
+
+.snippet-bubble {
+    height: 100%;
+    .snippet-caption {
+        $font-size: 14px;
+        $line-height: 1.4;
+        $lines-to-show: 3;
+        .description {
+            display: block;
+            display: -webkit-box;
+            max-width: 400px;
+            max-height: $font-size*$line-height*$lines-to-show;
+            margin:0;
+            font-size: $font-size;
+            line-height: $line-height;
+            -webkit-line-clamp: $lines-to-show;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+}
+
+.snippet-user {
+    
+    .dl-horizontal {
+        dt {
+            width:100px;
+        }
+        
+        dd {
+            margin-left:110px;
+        }
+    }
+}

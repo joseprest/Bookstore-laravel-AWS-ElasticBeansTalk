@@ -1,0 +1,38 @@
+<?php
+
+
+return [
+    'categories' => [
+        'business-economics-law' => 'Business, economics, law',
+        'arts' => 'Arts, architecture and design',
+        'comics' => 'Comics',
+        'biography' => 'Biography',
+        'self-help' => 'Personal Growth',
+        'cooking' => 'Cooking',
+        'decoration-gardening' => 'Decoration and gardening',
+        'education-languages' => 'Education and languages',
+        'essays-literary-criticism' => 'Literary and critical essays',
+        'family' => 'Family and Maternity',
+        'computers' => 'Computers',
+        'juvenile-fiction' => 'Youth - albums and novels',
+        'juvenile-comics' => 'Youth - comics',
+        'juvenile-nonfiction' => 'Youth - documentaries',
+        'nature-environment' => 'Nature and environment',
+        'reference' => 'Reference books',
+        'parapsychology' => 'Parapsychology',
+        'poetry-drama' => 'Poetry and theater',
+        'psychology' => 'Psychology',
+        'religion-spirituality' => 'Religion and Spirituality',
+        'novel-fiction' => 'Novels and short stories',
+        'historical-fiction' => 'Historical novels',
+        'detective-suspense' => 'Mystery & Suspense',
+        'science-fiction-fantasy' => 'Science Fiction & Fantasy',
+        'romance' => 'Romance',
+        'health' => 'Health',
+        'science-technology' => 'Science and technology',
+        'social-science' => 'Humanities and Social Sciences',
+        'sports-hobbies' => 'Sports and leisures',
+        'tourism-travel' => 'Tourism and Travel',
+        'transportation' => 'Transportation',
+    ],
+];

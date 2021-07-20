@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="101px" height="101px" viewBox="0 0 101 101" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+    <title>events</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Portrait-(2-zones)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Accueil-3-Copy-3" transform="translate(-273.000000, -1529.000000)">
+            <g id="events" transform="translate(273.000000, 1529.000000)">
+                <path d="M0,7.99094873 C0,6.33909336 1.35139264,5 2.99532727,5 L98.0046727,5 C99.6589463,5 101,6.34772408 101,7.99094873 L101,27.3493976 L0,27.3493976 L0,7.99094873 Z M15,21 C17.7614237,21 20,18.7614237 20,16 C20,13.2385763 17.7614237,11 15,11 C12.2385763,11 10,13.2385763 10,16 C10,18.7614237 12.2385763,21 15,21 Z M86,21 C88.7614237,21 91,18.7614237 91,16 C91,13.2385763 88.7614237,11 86,11 C83.2385763,11 81,13.2385763 81,16 C81,18.7614237 83.2385763,21 86,21 Z" id="Rectangle-341" fill="#D61E23"></path>
+                <rect id="Rectangle-684" fill="#C0A077" x="12" y="0" width="6" height="18" rx="3"></rect>
+                <rect id="Rectangle-684-Copy" fill="#C0A077" x="83" y="0" width="6" height="18" rx="3"></rect>
+                <rect id="Rectangle-684-Copy-3" fill="#E6D6B2" x="14" y="2" width="2" height="8" rx="100"></rect>
+                <rect id="Rectangle-684-Copy-2" fill="#E6D6B2" x="85" y="2" width="2" height="8" rx="100"></rect>
+                <rect id="Rectangle-341-Copy-12" fill="#C0A077" x="0" y="34.3493976" width="101" height="66.2433735" rx="3"></rect>
+                <rect id="Rectangle-341" fill="#E6D6B2" x="0" y="27.3493976" width="101" height="66.2433735" rx="3"></rect>
+                <rect id="Rectangle-341" fill="#E6D6B2" x="0" y="27.3493976" width="101" height="40.1216867"></rect>
+                <rect id="Rectangle-341-Copy-7" fill="#DBCAA4" x="5" y="47" width="16" height="12"></rect>
+                <rect id="Rectangle-341-Copy-8" fill="#DBCAA4" x="24" y="47" width="16" height="12"></rect>
+                <rect id="Rectangle-341-Copy-4" fill="#DBCAA4" x="43" y="32" width="16" height="12"></rect>
+                <rect id="Rectangle-341-Copy-9" fill="#DBCAA4" x="43" y="47" width="16" height="12"></rect>
+                <rect id="Rectangle-341-Copy-5" fill="#DBCAA4" x="62" y="32" width="16" height="12"></rect>
+                <rect id="Rectangle-341-Copy-10" fill="#DBCAA4" x="62" y="47" width="16" height="12"></rect>
+                <rect id="Rectangle-341-Copy-6" fill="#DBCAA4" x="81" y="32" width="16" height="12"></rect>
+                <rect id="Rectangle-341-Copy-11" fill="#DBCAA4" x="81" y="47" width="16" height="12"></rect>
+                <rect id="Rectangle-341-Copy-21" fill="#DBCAA4" x="5" y="62" width="16" height="12"></rect>
+                <rect id="Rectangle-341-Copy-20" fill="#DBCAA4" x="5" y="77" width="16" height="12"></rect>
+                <rect id="Rectangle-341-Copy-19" fill="#DBCAA4" x="24" y="62" width="16" height="12"></rect>
+                <rect id="Rectangle-341-Copy-18" fill="#DBCAA4" x="24" y="77" width="16" height="12"></rect>
+                <rect id="Rectangle-341-Copy-17" fill="#DBCAA4" x="43" y="62" width="16" height="12"></rect>
+                <rect id="Rectangle-341-Copy-16" fill="#DBCAA4" x="43" y="77" width="16" height="12"></rect>
+                <rect id="Rectangle-341-Copy-15" fill="#DBCAA4" x="62" y="62" width="16" height="12"></rect>
+                <rect id="Rectangle-341-Copy-14" fill="#DBCAA4" x="62" y="77" width="16" height="12"></rect>
+                <rect id="Rectangle-341-Copy-13" fill="#DBCAA4" x="81" y="62" width="16" height="12"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

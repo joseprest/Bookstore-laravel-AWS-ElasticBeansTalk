@@ -1,0 +1,92 @@
+.loading-block {
+    background-color: rgba(255, 255, 255, 0.95);
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    text-align: center;
+    color: $brand-primary;
+    font-size: 14px;
+
+    .content {
+        width: 160px;
+        margin: 15px auto 0;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    .icon {
+        position: relative;
+        margin-bottom: 15px;
+        height: 105px;
+    }
+
+    .dots {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        bottom: 15px;
+        left: 0;
+    }
+
+    .dot {
+        $diameter: 14px;
+
+        animation: loading-dot-blink 2s linear infinite alternate;
+        border-radius: 50%;
+        width: $diameter;
+        height: $diameter;
+        background-color: $color_white;
+        display: inline-block;
+        margin: 0 4px;
+
+        &:nth-child(1) {
+            animation-delay: 1s;
+        }
+
+        &:nth-child(2) {
+            animation-delay: 1.5s;
+        }
+
+        &:nth-child(3) {
+            animation-delay: 2s;
+        }
+    }
+
+    .glyphicon {
+        font-size: 140px;
+    }
+}
+        
+.inline-icon-loading {
+    display: inline-block;
+    background: url('/img/loading-playlist.gif') no-repeat center center;
+    background-size: contain;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+@keyframes loading-dot-blink {
+    0% {
+        opacity: 1;
+    }
+
+    45% {
+        opacity: 1;
+    }
+
+    55% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 0.2;
+    }
+}

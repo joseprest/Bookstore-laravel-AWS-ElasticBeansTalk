@@ -1,0 +1,278 @@
+body {
+    margin: 0 !important;
+    padding: 0;
+    min-width: 100% !important;
+    line-height: 1.6em;
+    background-color: #F3F0E8;
+}
+
+table {
+    border-spacing: 0;
+    font-family: Montserrat, Arial, Helvetica, sans-serif !important;
+}
+
+.content {
+    background-color: #F3F0E8;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 700px;
+}
+
+/*
+div[style*="margin: 16px 0"] { margin:0 !important; }
+*/
+
+td {
+    color: #3A365D;
+    padding: 0;
+}
+
+img {
+    border: 0;
+}
+
+.wrapper {
+    width: 100%;
+    table-layout: fixed;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+.webkit {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 30px;
+}
+
+.section td {
+    text-align: center;
+}
+
+.button td {
+    min-width: 168px;
+    background-color: #2DAD8D;
+    border-radius: 6px;
+    border-bottom: 4px solid #157059;
+    padding: 10px 16px;
+}
+
+.button a {
+    display: inline-block;
+    color: #F3F0E8;
+    font-size: 14px;
+    font-weight: bold;
+    line-height:2em;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*
+    HEADER
+*/
+
+.section-header {
+}
+
+.section-header > table {
+    table-layout: fixed;
+    min-width: 100%;
+}
+
+.section-header .social-medias td {
+    padding-left: 16px;
+}
+
+
+/*
+    BASIC-INFOS
+*/
+
+.section-basic-infos td, .section-basic-infos span, .section-basic-infos a {
+    font-weight: bold;
+}
+
+.section-basic-infos.basic-infos-with-cta {
+    background-color: #EAE5DB;
+}
+
+.section-basic-infos .bubble-type-name {
+    text-transform: uppercase;
+    letter-spacing: -0.4px;
+    font-size: 12px;
+}
+
+.section-basic-infos .bubble-type-name td {
+    padding: 10px 16px;
+    border: 1px solid #2C274B;
+    border-radius: 6px;
+}
+
+.section-basic-infos .bubble-title-container {
+    padding: 30px 0;
+}
+
+.section-basic-infos .bubble-title {
+    font-size: 30px;
+    line-height: 1.3em;
+}
+
+.section-basic-infos .bubble-subtitle {
+    font-size: 14px;
+    line-height: 1.3em;
+}
+
+
+/*
+    TWO COLUMNS
+*/
+
+.section-two-columns {
+    text-align: center;
+    font-size: 0;
+}
+
+.section-two-columns .section-column {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.section-two-columns .section-column-left {
+    max-width: 240px;
+}
+
+.section-two-columns .section-column-right {
+    max-width: 400px;
+}
+
+.section-two-columns .section-column-right td {
+    text-align: left;
+    font-size: 14px;
+}
+
+.section-two-columns .bubble-cover {
+    padding-bottom: 20px;
+}
+
+.section-two-columns .bubble-description {
+    padding-bottom: 20px;
+}
+
+.bubble-fields {
+    max-width:400px;
+}
+
+.section-image-description .bubble-fields, .section-image .bubble-fields {
+    margin-top:40px;
+}
+
+.bubble-field {
+    border-top: 1px solid #CBC7C9;
+    padding: 10px 0;
+}
+
+.bubble-field .field-label {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.6;
+}
+
+
+/*
+    MESSAGE
+*/
+
+.section-message {
+    background-color: #FFFFFF;
+}
+
+.section-message .message-container {
+    padding-right: 20px;
+    border-right: 2px solid #F5F4F3;
+}
+
+.section-message .message-label, .section-message .message-content {
+    text-align: left;
+}
+
+.section-message .message-label {
+    color: #9C9386;
+    font-size: 12px;
+}
+
+.section-message .message-content {
+    font-size: 14px;
+}
+
+.section-message .message-stamp img {
+    width: 60% !important;
+}
+
+/*
+    IMAGE FULL
+*/
+
+.section-image-full {
+    padding: 0;
+}
+
+.section-image-full img {
+    width: 100% !important;
+}
+
+.section-image-full .section-image-description td {
+    color: #9C9386;
+    font-size: 12px;
+}
+
+
+/*
+    IMAGE
+*/
+
+.section-image {
+    text-align: left;
+}
+
+.section-image table {
+    width: 70%;
+}
+
+.section-image .image-container {
+    padding-top: 20px;
+}
+
+.section-image img {
+    width: 100% !important;
+}
+
+.section-image .image-credits {
+    text-align: left;
+    color: #9C9386;
+    font-size: 12px;
+}
+
+
+/*
+    FOOTER
+*/
+
+.section-footer {
+    padding-top: 20px;
+}
+
+.section-footer .footer-note {
+    font-size: 12px;
+    color: #D4CDC5;
+}
+
+.section-footer .footer-note a {
+    color: #ACA398;
+    text-decoration: underline;
+    text-decoration-color: #D4CDC5;
+}

@@ -1,0 +1,119 @@
+.navbar-brand {
+    padding-top:0px;
+    padding-bottom:0px;
+}
+
+.navbar-btn {
+    border:none;
+    appearance:none;
+    outline:0;
+    background: transparent;
+    color:#fff;
+    box-shadow: none;
+    margin:0px;
+    font-weight:normal;
+    font-size:12px;
+}
+
+.navbar-primary {
+    background: $color_purple;
+
+    .btn
+    {
+        @extend .navbar-btn;
+    }
+
+    .btn,
+    .btn:hover,
+    .btn:active,
+    .btn:focus,
+    .open .btn.dropdown-toggle {
+        @extend .navbar-btn;
+    }
+
+    .btn:active {
+        position:relative;
+        top:1px;
+    }
+}
+
+.navbar-inner {
+    @extend .container;
+    display:table;
+    margin:0 auto;
+    min-height:60px;
+}
+
+.navbar-col {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.navbar-title
+{
+    white-space: nowrap;
+
+    .navbar-brand
+    {
+        display: inline-block;
+        min-height:0px;
+        height:auto;
+        float:none;
+        vertical-align:middle;
+        position:relative;
+    }
+
+    .logo
+    {
+        display: inline-block;
+        background-image: url("/img/logo.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        vertical-align: middle;
+        width: 54px;
+        height: 30px;
+    }
+
+    .organisation-name
+    {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+.navbar-center
+{
+    width:100%;
+    text-align: center;
+    height: $navbar-height + 9;
+
+    &:before {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+
+    .navbar-screen
+    {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+.btn-container
+{
+    display: inline-block;
+    position: relative;
+
+}
+
+.navbar-profile
+{
+    text-align: right;
+
+    .btn {
+        padding-right:0px;
+    }
+}

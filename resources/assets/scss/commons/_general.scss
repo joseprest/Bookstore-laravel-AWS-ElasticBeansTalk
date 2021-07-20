@@ -1,0 +1,17 @@
+.container-cols {
+    display:table;
+    width:100%;
+}
+
+.container-col {
+    display:table-cell;
+    vertical-align:middle;
+    
+    &.top {
+        vertical-align:top;
+    }
+    
+    &.right {
+        text-align:right;
+    }
+}

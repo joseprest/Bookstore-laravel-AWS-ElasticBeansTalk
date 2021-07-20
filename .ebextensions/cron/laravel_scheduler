@@ -1,0 +1,5 @@
+SHELL=/bin/bash
+PATH=/sbin:/bin:/usr/sbin:/usr/bin
+MAILTO=root
+HOME=/
+* * * * * webapp php /var/app/current/artisan schedule:run >> /dev/null 2>&1

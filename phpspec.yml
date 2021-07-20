@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: Manivelle
+        psr4_prefix: Manivelle
+        src_path: app

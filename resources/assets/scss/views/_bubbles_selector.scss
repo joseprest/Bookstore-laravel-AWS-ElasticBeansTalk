@@ -1,0 +1,24 @@
+.bubbles-selector {
+    
+    position:relative;
+    min-height:300px;
+    
+    .col-channels, .col-bubbles {
+        position:relative;
+    }
+    
+    .list-bubbles {
+        position:relative;
+        min-height:100px;
+    }
+    
+    
+    .modal & {
+        .list-bubbles {
+            max-height:600px;
+            overflow:auto;
+        }
+        
+    }
+    
+}

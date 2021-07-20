@@ -1,0 +1,38 @@
+/* Large desktop */
+$screen-large: 1200px;
+/* Landscape phone to portrait tablet */
+$screen-medium: 767px;
+/* Content */
+$screen-small: 640px;
+/* Landscape phones and down */
+$screen-xsmall: 560px;
+
+//----------------COLOR----------------------
+
+$color_black: #000;
+$color_white: #fff;
+$color_gray: #414141;
+$color_purple: #545090;
+$gray-base: #000;
+
+/*
+ * Boostrap
+ */
+$icon-font-path: "/vendor/bootstrap/fonts/";
+$font-family-sans-serif: "Canal", sans-serif;
+$headings-font-weight: normal;
+$btn-font-weight: bold;
+
+/*
+ * Navbar
+ */
+$navbar-height: 60px;
+$navbar-default-color: #000;
+
+/*
+ * Buttons
+ */
+$btn-color: transparent;
+$btn-primary-color: #000;
+$btn-primary-bg: transparent;
+$btn-primary-border: #000;

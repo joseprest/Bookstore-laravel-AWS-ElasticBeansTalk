@@ -1,0 +1,3 @@
+{!! $playlist !!}
+
+{!! $timeline !!}

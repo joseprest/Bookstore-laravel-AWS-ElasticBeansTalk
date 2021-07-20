@@ -1,0 +1,155 @@
+h1, h2
+{
+    margin-bottom: 30px;
+}
+
+.container-screens
+{
+    margin-bottom: 100px;
+    position: relative;
+    
+    .btn-group-screen
+    {
+        margin-right: 30px;
+        width: 163px;
+        height: 257px;
+        position: relative;
+        
+        .btn-banner-offline
+        {
+            display: none;
+            background-color: #333;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            color: #fff;
+            padding: 10px;
+        }
+        
+        .btn-default-screen
+        {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+        }
+        
+        .btn-icon-screen
+        {
+            font-size: 60px;
+        }
+
+        .btn-labels-screen
+        {
+            position: absolute;
+            bottom: 15px;
+            left: 10px;
+            right: 10px;
+            white-space: normal;
+            
+            .btn-sublabel-screen
+            {
+                font-size: 10px;
+            }
+        }
+    }
+    
+    .btn-group-screen-offline
+    {
+        .btn-banner-offline
+        {
+            display: block;
+        }
+    }
+    
+    .dropdown-menu-screen
+    {
+        top:0;
+        left: 100%;
+        
+        p
+        {
+            clear: both;
+        }
+        
+        .dropdown-menu-screen-form
+        {    
+            .input-dropdown-menu-screen
+            {
+                width: 70%;
+            }
+            
+            .dropdown-menu-screen-form-left
+            {
+                float: left;
+            }
+            
+            .dropdown-menu-screen-form-right
+            {
+                float: right;
+            }
+        }
+    }
+}
+
+.container-team
+{
+    .profile-team
+    {
+        display: table;
+        float: left;
+        height: 47px;
+        margin-right: 60px;
+        
+        .profile-team-avatar
+        {
+            float: left;
+            width: 47px;
+            height: 47px;
+            background-color: #ccc;
+            margin-right: 20px;
+        }
+        
+        .profile-team-info
+        {
+            display: table-cell;
+            vertical-align: middle;
+            
+            span
+            {
+                display: block;
+                clear: both;
+            }
+        }
+    }
+    
+    .btn-group-team
+    {
+        .btn-team
+        {
+            padding: 0;
+            border: 0;
+            
+            .btn-team-plus
+            {
+                width: 47px;
+                height: 47px;   
+                margin-right: 20px; 
+                line-height: 47px;
+                border: 1px solid #ccc;
+            }
+        }
+    }
+}
+
+.dropdown-menu-add
+{
+    padding: 20px;
+    width: 350px;
+    
+    .input-group
+    {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}

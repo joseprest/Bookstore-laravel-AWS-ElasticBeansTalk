@@ -1,0 +1,41 @@
+.nav-submenu {
+    text-align:center;
+    font-size:0px;
+    margin: 20px 0;
+    
+    & > li {
+        display:inline-block;
+        white-space: nowrap;
+    }
+    
+    li {
+        border: solid 1px #000;
+        border-left:none;
+        margin:0;
+        font-size:14px;
+        
+        a {
+            color:#000;
+        }
+        
+        &.active {
+            
+            a, a:hover {
+                background:#000;
+                color:#fff;
+            }
+            
+        }
+    }
+    
+    li:first-child {
+        border-left: solid 1px #000;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+    }
+    
+    li:last-child {
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+    }
+}

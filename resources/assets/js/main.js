@@ -1,0 +1,5 @@
+const $ = require('jquery-external');
+
+$(() => {
+
+});

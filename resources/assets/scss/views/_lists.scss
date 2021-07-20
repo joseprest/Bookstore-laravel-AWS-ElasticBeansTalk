@@ -1,0 +1,862 @@
+/**
+ *
+ * Item
+ *
+ */
+.list-item {
+    position: relative;
+
+    &:hover, &:active, a:hover, a:active, a.thumbnail:hover, a.thumbnail:active {
+        text-decoration:none;
+    }
+
+    &:hover {
+        .remove-btn {
+            opacity: 1;
+        }
+    }
+
+    .thumbnail {
+
+        position: relative;
+        display:inline-block;
+        height: 100%;
+        width: 100%;
+        color: $gray-base;
+        border-color: $gray-base;
+        width:100%;
+        margin:0;
+        outline: none;
+        padding: 0;
+
+        .image {
+            display:block;
+            min-width:100px;
+            min-height:100px;
+            background-size:cover;
+            background-repeat: no-repeat;
+            background-position:center center;
+        }
+
+        .icon {
+            display: flex;
+            padding-top: 26px;
+            padding-bottom: 58px;
+            width: 100%;
+            height: 100%;
+            font-size: 50px;
+            text-align: center;
+            flex-direction: column;
+            justify-content: center;
+
+            span
+            {
+                display: inline-block;
+            }
+        }
+
+        .caption {
+            /*position: absolute;
+            bottom: 10px;
+            left: 0;
+            right: 0;*/
+            display:block;
+            padding: 0 10px;
+
+            span, strong {
+                display:block;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                width: 100%;
+                overflow: hidden;
+                box-sizing: border-box;
+            }
+        }
+
+        .caption-lg {
+            font-size:24px;
+
+            .small {
+                font-size:50%;
+            }
+        }
+
+        &:hover, &:active {
+            color: $gray-base;
+            border-color: $gray-base;
+            text-decoration:none;
+
+            .caption {
+                text-decoration:none;
+            }
+        }
+    }
+
+    .thumbnail-horizontal {
+        border:none;
+        padding:0px;
+
+        .icon, .image {
+            display:inline-block;
+            vertical-align:middle;
+            margin-right:5px;
+        }
+
+        .caption {
+            position: relative;
+            display:inline-block;
+            vertical-align:middle;
+            padding:0px;
+            text-align:left;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            white-space:nowrap;
+        }
+    }
+
+    .remove-btn {
+        font-size: 22px;
+        color: $color_gray;
+        cursor: pointer;
+        display: block;
+        opacity: 0;
+        position: absolute;
+        right: 14px;
+        top: -7px;
+
+        &:hover {
+            color: $color_black;
+        }
+    }
+
+    &.list-item-add {
+
+        .thumbnail-horizontal {
+            .caption {
+                overflow:visible;
+                white-space:normal;
+            }
+        }
+    }
+}
+
+.list-item-first {
+    font-weight: 700;
+}
+
+.list-team {
+
+    .list-item
+    {
+        margin-bottom: 20px;
+
+        &.list-item-sm {
+            @extend .col-md-3;
+        }
+    }
+}
+
+.list-item-sm {
+    .thumbnail {
+        .image {
+            min-width:0px;
+            min-height:0px;
+            width:50px;
+            height:50px;
+        }
+
+        &.thumbnail-horizontal {
+            position:relative;
+            /*display: table;
+            width:100%;
+            overflow:hidden;
+            zoom:1;*/
+            /*display:block;*/
+
+            display: flex;
+            align-items: center;
+
+            .image, .icon {
+                padding:0px;
+                width:50px;
+                height:50px;
+                margin:0px;
+                top:auto;
+                bottom: auto;
+                left:auto;
+                right: auto;
+
+                /*display:table-cell;
+                position:relative;
+                vertical-align:top;*/
+
+                /*display:block;
+                position:absolute;
+                top:0px;
+                left:0px;*/
+
+                position:relative;
+                display: inline-block;
+                margin-right:10px;
+            }
+
+            .icon {
+                font-size:20px;
+
+                .glyphicon {
+                    position:absolute;
+                    top:50%;
+                    left:0px;
+                    width:100%;
+                    height:30px;
+                    margin-top:-10px;
+                }
+            }
+
+            .caption {
+                top:auto;
+                left:auto;
+                right:auto;
+                bottom:auto;
+
+                /*display:table-cell;
+                vertical-align:middle;
+                padding-left:10px;
+                overflow:hidden;
+                text-overflow:ellipsis;
+                word-break: break-all;*/
+
+                display:inline-block;
+                vertical-align:middle;
+                flex: 1;
+
+                /*display:block;
+                padding-left:60px;*/
+
+                strong, span {
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+
+.list-item-xs {
+    .thumbnail {
+        text-align:center;
+
+        .image, .icon {
+            min-width:0px;
+            min-height:0px;
+            width:75px;
+            height:75px;
+            margin: 0 auto;
+            margin-bottom:5px;
+        }
+
+        .caption {
+            font-size:12px;
+        }
+    }
+
+    &.list-item-add {
+        .thumbnail {
+
+            .icon {
+                position:relative;
+                font-size:20px;
+                line-height:73px;
+                border:dashed 2px $gray-light;
+            }
+        }
+    }
+}
+
+.list-item-add {
+    color: $gray-light;
+
+    .icon, .caption {
+        color: $gray-light;
+    }
+
+    &:hover, &:active {
+        .icon, .caption {
+            color: $gray-base;
+        }
+    }
+
+    .thumbnail {
+        display:block;
+        border:dashed 2px $gray-light;
+        color: $gray-light;
+        width:100%;
+        padding:10px;
+
+        .caption
+        {
+            .small
+            {
+                position: absolute;
+                bottom: 0;
+            }
+        }
+
+        .icon, .caption {
+            color: $gray-light;
+        }
+
+        &:hover, &:active {
+            .icon, .caption {
+                color: $gray-base;
+            }
+        }
+
+        &.thumbnail-horizontal {
+            border:none;
+            padding:0px;
+            .icon {
+                border: dashed 2px $gray-light;
+            }
+
+            &:hover, &:active {
+                .icon {
+                    border-color: $gray-base;
+                }
+            }
+        }
+    }
+}
+
+/**
+ *
+ * Lists
+ *
+ */
+.list {
+    display:block;
+}
+
+.list-thumbnails {
+    @extend .row;
+
+    .list-item {
+        @extend .col-sm-6;
+        @extend .col-md-4;
+        margin-bottom:$grid-gutter-width;
+
+        &.list-item-sm {
+            @extend .col-xs-6;
+            @extend .col-sm-4;
+            @extend .col-md-3;
+        }
+
+        &.list-item-xs {
+            @extend .col-sm-2;
+            @extend .col-md-2;
+            padding:5px;
+        }
+    }
+
+    .caption {
+        text-align:center;
+    }
+}
+
+.list-item-col {
+    float:none;
+    margin:0;
+    padding:0 10px;
+    display:table-cell;
+    vertical-align:middle;
+    font-size: $font-size-base;
+
+    &:first-child {
+        padding-left:0px;
+    }
+
+    &:last-child {
+        padding-right:0px;
+    }
+
+    &.list-item-col-top {
+        vertical-align:top;
+    }
+
+    &.list-item-col-bottom {
+        vertical-align:bottom;
+    }
+}
+
+.list-rows {
+
+    .list-item {
+        border-bottom:solid 1px $gray-lighter;
+        display:table;
+        width:100%;
+        background:#fff;
+    }
+
+    .thumbnail {
+        display:block;
+        border:none;
+        border-radius:0px;
+        padding: 20px 0;
+
+        &:hover {
+            background: $gray-lighter;
+        }
+    }
+
+    .list-item-col-last {
+        text-align:right;
+    }
+
+    .list-item-col-drag {
+        .glyphicon {
+            width:100%;
+            display:block;
+            padding:10px 0;
+            cursor:move;
+            text-align:center;
+        }
+
+        .drag-loading {
+            display:block;
+            background: url('/img/loading-playlist.gif') no-repeat center center;
+            background-size:contain;
+            width:16px;
+            height:16px;
+            margin:0 auto;
+        }
+    }
+
+    .list-item-col-1 {
+        @extend .col-sm-1;
+        @extend .list-item-col;
+    }
+    .list-item-col-2 {
+        @extend .col-sm-2;
+        @extend .list-item-col;
+    }
+    .list-item-col-3 {
+        @extend .col-sm-3;
+        @extend .list-item-col;
+    }
+    .list-item-col-4 {
+        @extend .col-sm-4;
+        @extend .list-item-col;
+    }
+    .list-item-col-5 {
+        @extend .col-sm-5;
+        @extend .list-item-col;
+    }
+    .list-item-col-6 {
+        @extend .col-sm-6;
+        @extend .list-item-col;
+    }
+    .list-item-col-7 {
+        @extend .col-sm-7;
+        @extend .list-item-col;
+    }
+    .list-item-col-8 {
+        @extend .col-sm-8;
+        @extend .list-item-col;
+    }
+    .list-item-col-9 {
+        @extend .col-sm-9;
+        @extend .list-item-col;
+    }
+    .list-item-col-10 {
+        @extend .col-sm-10;
+        @extend .list-item-col;
+    }
+    .list-item-col-11 {
+        @extend .col-sm-11;
+        @extend .list-item-col;
+    }
+    .list-item-col-12 {
+        @extend .col-sm-12;
+        @extend .list-item-col;
+    }
+
+    .list-item-add {
+        margin-top:20px;
+        font-size: $font-size-base;
+        border-bottom: 0px;
+        padding:0;
+
+        .thumbnail {
+            display:block;
+            padding:20px;
+            text-align:center;
+        }
+
+        &:first-child {
+            margin-top:0px;
+        }
+    }
+}
+
+/**
+ *
+ * Organisations
+ *
+ */
+.list-organisations {
+
+
+
+}
+
+/**
+ *
+ * Screens
+ *
+ */
+
+.list-screens {
+
+    .list-item {
+        margin-bottom: 20px;
+
+        .thumbnail {
+            display:block;
+            height:0px;
+            padding-bottom:150%;
+            text-align:center;
+            background:#eee;
+            border:none;
+            border-radius: 0px;
+            color: $gray-light;
+
+            &.thumbnail-half {
+                padding-bottom:75%;
+            }
+        }
+
+        .icon {
+            position:absolute;
+            left:0px;
+            padding:0;
+            top:0px;
+        }
+
+        .manivelle {
+            position:relative;
+            background:#fff;
+            width:60%;
+            left:20%;
+
+            .status-icon {
+                display:block;
+                position:absolute;
+                top:50%;
+                left:50%;
+                color:#fff;
+                width:50px;
+                height:50px;
+                margin-left:-25px;
+                margin-top:-25px;
+                font-weight:normal;
+                text-align:center;
+                font-size:50px;
+                line-height:1em;
+            }
+
+            .inner {
+                display:block;
+                height:0px;
+                padding-bottom:150%;
+            }
+
+            .screen {
+                position:absolute;
+                display:block;
+                background:$gray-light;
+                width:60%;
+                height:70%;
+                left:20%;
+                top:10%;
+            }
+
+            .handle {
+                left:50%;
+                margin-bottom:-10px;
+                margin-left:-10px;
+                bottom:10%;
+                position:absolute;
+                background:$gray-light;
+                height:20px;
+                width:20px;
+                border-radius: 50%;
+            }
+        }
+
+        .caption {
+            position:absolute;
+            width:100%;
+            box-sizing: border-box;
+            bottom:10px;
+            left:0px;
+            color: $gray-light;
+            font-size:150%;
+        }
+    }
+
+    .banner-offline {
+        background-color: $gray-light;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        color: #fff;
+        padding: 10px 0;
+        font-size:75%;
+        text-transform:uppercase;
+    }
+
+    .list-item-add {
+
+        .icon {
+            border:dashed 2px $gray-light;
+        }
+
+        .thumbnail {
+            background: transparent;
+            box-sizing: border-box;
+            padding:0px;
+            padding-bottom:150%;
+
+            &:hover {
+                .icon {
+                    border-color: #000;
+                }
+            }
+
+            &.thumbnail-half:last-child {
+                .icon {
+                    border-top: none;
+                }
+            }
+        }
+
+        .caption {
+            font-size:100%;
+        }
+    }
+}
+
+/**
+ *
+ * Bubbles
+ *
+ */
+
+.list-bubbles {
+    .list-item {
+        padding: 10px 0;
+    }
+}
+
+/**
+ *
+ * Channels
+ *
+ */
+
+.list-channels {
+    .list-item {
+
+        .image {
+            background-size:contain;
+        }
+
+        .thumbnail {
+            border:none;
+
+            .caption {
+                height: auto;
+                bottom: auto;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                width: 100%;
+                overflow: hidden;
+            }
+        }
+    }
+
+    .list-item-add {
+        .icon {
+            padding: 0;
+        }
+
+        .thumbnail {
+            padding:0;
+        }
+    }
+}
+
+/**
+ *
+ * Add-channel
+ *
+ */
+
+.list-add-channel {
+
+    .list-item{
+        display: table;
+        margin-bottom: 30px;
+    }
+
+    .thumbnail {
+        display: table-cell;
+        padding-right: 10px;
+        width: 74px;
+        border: 0;
+        vertical-align: top;
+
+        .image {
+            min-height: 74px;
+            min-width: 74px;
+            margin-bottom: 10px;
+            background-size:contain;
+            background-position: top center;
+        }
+
+        .btn
+        {
+            width: 100%;
+        }
+    }
+
+    .detail {
+        display: table-cell;
+        text-align:left;
+
+        h4 {
+            font-weight:bold;
+            margin:0;
+            padding:0;
+            font-size:14px;
+        }
+
+        p {
+            margin:0;
+            padding:0;
+            margin-top:5px;
+        }
+
+        .btn {
+            display:block;
+            margin-top:10px;
+        }
+    }
+}
+
+/**
+ *
+ * Account
+ *
+ */
+
+.list-account {
+    .btn {
+        border: 0;
+        padding: 0;
+
+        .glyphicon {
+            font-size: 10px;
+        }
+    }
+
+    .list-item {
+        .thumbnail {
+            width: auto;
+        }
+
+        .image {
+            min-width: 50px;
+            min-height: 50px;
+        }
+
+        .caption {
+            height: auto;
+            bottom: auto;
+            margin-left: 5px;
+        }
+    }
+
+    .list-item-add {
+        margin-top: 0;
+        border-bottom: solid 1px #eeeeee;
+        padding: 20px 0;
+
+        .dropdown-menu a {
+            padding: 3px 20px;
+            text-align: left;
+        }
+
+        .caption {
+            float: left;
+        }
+    }
+}
+
+/**
+ *
+ * Playlist
+ *
+ */
+
+.list-playlist {
+
+    .toolbar {
+        margin-top:20px;
+        padding:0 0 10px 0;
+        border-bottom: solid 1px #ddd;
+
+        .btn-toolbar {
+            display:inline-block;
+            vertical-align:middle;
+        }
+    }
+
+    .list-item {
+        .alert {
+            margin:0;
+        }
+    }
+
+    .stats {
+        display:inline-block;
+        vertical-align:middle;
+        padding:0px;
+        margin-left:20px;
+    }
+
+    .btn-no-border{
+        border: 0;
+        font-size: 16px;
+    }
+
+    .list-item {
+        padding: 12px 0;
+        box-sizing: content-box;
+    }
+
+    .list-item-empty {
+        height: auto;
+        padding:40px 0;
+        color:#999;
+        text-align:center;
+    }
+
+    .list-item-add {
+        padding: 20px 0;
+        margin-top:0px;
+        .glyphicon {
+            margin-right: 10px;
+        }
+    }
+}

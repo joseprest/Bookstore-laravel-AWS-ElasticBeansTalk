@@ -1,0 +1,11 @@
+{
+    "apps" : [{
+        "name"        : "laravel-queue-priority",
+        "interpreter" : "/usr/bin/php",
+        "script"      : "./artisan",
+        "args"        : "queue:work priority --sleep=1 --tries=3",
+        "cwd"         : "/var/app/current/",
+        "watch"       : false,
+        "merge_logs"  : true
+    }]
+}

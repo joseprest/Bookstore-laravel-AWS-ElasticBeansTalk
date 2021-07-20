@@ -1,0 +1,38 @@
+.danger-zone {
+    margin-top:40px;
+    
+    .toggle {
+        border-top: solid 1px #ddd;
+        border-bottom: solid 1px #ddd;
+        
+        button {
+            display:block;
+            padding:20px;
+            text-align:center;
+            color:#999;
+            appearance: none;
+            width:100%;
+            background: transparent;
+            border:none;
+            outline: none;
+        }
+        
+        .glyphicon {
+            margin: 0 10px;
+        }
+    }
+    
+    .options {
+        margin-top:20px;
+    }
+    
+    .option {
+        background:#eee;
+        padding:20px 40px;
+        
+        h4 {
+            margin:0 0 10px 0;
+        }
+    }
+    
+}

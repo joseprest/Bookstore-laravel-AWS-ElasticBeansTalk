@@ -1,0 +1,173 @@
+.container-alerts-off
+{
+    display: none;
+}
+
+.container-setting
+{
+    width: 530px;
+    margin: 0 auto;
+    margin-top: 40px;
+    
+    fieldset
+    {
+        margin-top: 10px;
+        padding-bottom: 30px;
+        
+        legend
+        {
+            vertical-align: top;
+            span
+            {
+                margin-right: 10px;
+            }
+        }
+        
+        &:first-child
+        {
+            border-bottom: 1px solid #000;
+        }    
+    }
+    
+    .input-group-setting
+    {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    .btn-group-setting
+    {
+        .btn-default-setting
+        {
+            width: 160px;
+            margin-right: 20px;
+            float: left;
+        }
+        
+        p
+        {
+            float: left;
+            width: 350px;
+            font-size: 12px;
+        }
+    }
+    
+    .google-map
+    {
+        width: 100%;
+        height: 250px;
+        background-color: #ECECEC;
+        margin-bottom: 30px;
+    }
+}
+
+.container-channels
+{
+    overflow: hidden;
+    margin-top: 40px;
+    
+    .channel
+    {
+        float: left;
+        margin-right: 33px;
+        position: relative;
+        text-align: center;
+        
+        .channel-thumbnail, .btn-channel
+        {
+            width: 86px;
+            height: 86px;
+            margin: auto 0;
+            border-radius: 0;
+        }
+        
+        .channel-thumbnail
+        {
+            background-color: #ccc
+        }
+        
+        p
+        {
+            margin-top: 10px;
+            font-size: 12px;
+        }
+    }
+}
+
+.container-table
+{
+    overflow: hidden;
+    clear: both;
+    
+    .table
+    {
+        margin-bottom: 0;
+        margin-top: 40px;
+        
+        tbody
+        {
+            tr
+            {
+                td
+                {
+                    padding: 17px;
+                }
+            }
+        }
+        
+        .table-vertical
+        {
+            vertical-align: middle;
+            
+            div
+            {
+                display: inline-block;
+            }
+        }
+        
+        .table-thumbnail
+        {
+            display: none;
+        }
+        
+        .table-description
+        {
+            float: left;
+        }
+        
+        .table-link, .table-type
+        {
+            display: block;
+            float: none;
+            width: 100%;
+        }
+        
+        h3
+        {
+            font-size: 15px;
+            margin: 0;
+            margin-bottom: 5px;
+        }
+        
+    }
+
+    .btn-default-table
+    {
+        margin-bottom: 20px;
+        width: 100%;
+        height: 100px;
+    }
+
+    .table-slider
+    {
+        .table-thumbnail
+        {
+            display: block;
+            width: 57px;
+            height: 83px;
+            background-color: #D8D8D8;
+            float: left;
+            margin-right: 20px;
+        }
+    }
+}

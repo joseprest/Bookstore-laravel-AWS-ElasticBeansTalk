@@ -1,0 +1,53 @@
+.popover-screen-add {
+    max-width:320px;
+}
+
+.popover {
+    min-width:300px;
+}
+
+.modal-backdrop {
+    background: rgba(0,0,0,0.5);
+}
+
+.modal-container {
+    display:table;
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0px;
+    left:0px;
+    transform: translate(0,0);
+    
+    .modal {
+        display:table-cell !important;
+        vertical-align:middle;
+        width:100%;
+        height:auto;
+        position:relative;
+    }
+}
+
+.modal-dialog {
+    max-width:900px;
+    margin:0 auto;
+    
+}
+
+.popover {
+    .form-actions {
+        padding:0;
+        border:none;
+    }
+    
+    .danger-zone {
+        margin-top:20px;
+        .options {
+            margin-top:10px;
+        }
+        .option {
+            background:#eee;
+            padding:10px 10px;
+        }
+    }
+}

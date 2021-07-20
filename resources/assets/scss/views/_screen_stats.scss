@@ -1,0 +1,40 @@
+.screen-stats {
+    
+    .metrics {
+        margin-bottom:40px;
+    }
+    
+    .metric {
+        text-align:center;
+        padding:20px 10px;
+        border:solid 1px #ddd;
+        border-radius: 4px;
+        white-space: nowrap;
+        overflow:hidden;
+        text-overflow:ellipsis;
+    }
+    
+    .metric-number {
+        font-size:300%;
+        line-height: 1em;
+    }
+    
+    .metric-label {
+        margin: 20px 0 10px 0;
+        font-weight:bold;
+    }
+    
+    .metric-total{
+        font-size:90%;
+    }
+    
+    .data-group {
+        font-weight: bold;
+    }
+
+    .data-group-children {
+        td:first-child {
+            padding-left: 25px;
+        }
+    }
+}

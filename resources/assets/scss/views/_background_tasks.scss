@@ -1,0 +1,54 @@
+.background-tasks {
+    color: $color_white;
+    position: absolute;
+    top: 9px;
+    right: 10px;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.2s;
+    cursor: default;
+
+    &:hover.visible {
+        .message {
+            opacity: 1;
+            width: auto;
+            padding: 6px 28px 4px 10px;
+        }
+
+        .spinner {
+            color: $color_purple;
+            transition: color 0.2s;
+        }
+    }
+
+    &.visible {
+        opacity: 1;
+    }
+
+    .spinner {
+        font-size: 14px;
+        animation: bg-tasks-spin 1s infinite linear;
+        transition: none;
+    }
+
+    .message {
+        white-space: nowrap;
+        background-color: $color_white;
+        color: $color_purple;
+        font-size: 12px;
+        display: inline-block;
+        border-radius: 5px;
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        opacity: 0;
+        transition: opacity 0.2s;
+        width: 0;
+        overflow: hidden;
+    }
+}
+
+@keyframes bg-tasks-spin {
+    from { transform: scale(1) rotate(0deg);}
+    to { transform: scale(1) rotate(360deg);}
+}

@@ -1,0 +1,98 @@
+.screen-controls {
+    
+    .cols {
+        display:table;
+        width:100%;
+    }
+    
+    .col {
+        display:table-cell;
+        vertical-align:top;
+        width:50%;
+        padding-right:20px;
+        
+        &:last-child {
+            padding-right:0px;
+        }
+    }
+    
+    .btn-group {
+        margin-bottom:20px;
+    }
+    
+    .screen-header {
+        margin-bottom:10px;
+    }
+    
+    .screen-status {
+        
+        display:table;
+        width:100%;
+        
+        .icon, .status {
+            display:table-cell;
+            vertical-align:middle;
+        }
+        
+        .icon {
+            font-size:30px;
+            line-height:30px;
+            width:30px;
+            height:30px;
+        }
+        .status {
+            line-height: 1em;
+            padding-left:10px;
+            h4 {
+                margin:0;
+                margin-bottom:5px;
+                font-size:14px;
+            }
+            p {
+                margin:0;
+                font-size:12px;
+            }
+        }
+    }
+    
+    .screen-logs {
+        max-height:400px;
+        overflow:auto;
+        padding:5px;
+        border: solid 1px #ddd;
+    }
+    
+    .screen-log {
+        padding:5px;
+        border-bottom:solid 1px #ddd;
+        
+        &:last-child {
+            padding-bottom:0px;
+        }
+        
+        .date {
+            font-size:12px;
+            color:#666;
+        }
+        
+        .details {
+            margin-top:5px;
+            margin-bottom:5px;
+            
+            .collapse {
+                
+            }
+            
+            pre {
+                background: transparent;
+                border: solid 1px #eee;
+                color:#888;
+                font-family: monospace;
+                margin:0;
+                margin-top:5px;
+                font-size:10px;
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,54 @@
+.form-sign-up
+{
+    display: block;
+    margin: 0 auto;
+    max-width: 530px;
+    margin-top: 60px;
+    
+    fieldset
+    {
+        margin-bottom: 30px;
+        
+        label
+        {
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+        
+        .input-group
+        {
+            width: 100%;
+            margin-top: 20px;
+        }
+    }
+}
+
+.form-group-row {
+    display:table;
+    width:100%;
+}
+
+.form-group-inline {
+    display:table-cell;
+    vertical-align:middle;
+    position:relative;
+    padding-right:10px;
+    
+    &.form-group-right {
+        text-align:right;
+    }
+    
+    &:last-child {
+        width:100%;
+        padding-right:0px;
+    }
+    
+    .btn-group {
+        white-space:nowrap;
+    }
+    
+    .btn-group > .btn {
+        display:inline-block;
+        float:none;
+    }
+}

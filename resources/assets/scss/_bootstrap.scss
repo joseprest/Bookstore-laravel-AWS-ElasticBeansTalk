@@ -1,0 +1,48 @@
+@import "../../../vendor/panneau/panneau/src/resources/assets/src/scss/commons/bootstrap_variables";
+@import "commons/variables";
+@import "bootstrap-sass/assets/stylesheets/bootstrap";
+
+.dropdown-menu-with-arrow:before {
+    position: absolute;
+    top: -7px;
+    left: 9px;
+    display: inline-block;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid $dropdown-border;
+    border-left: 7px solid transparent;
+    content: '';
+}
+
+
+.dropdown-menu-with-arrow:after {
+    position: absolute;
+    top: -6px;
+    left: 10px;
+    display: inline-block;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid $dropdown-bg;
+    border-left: 6px solid transparent;
+    content: '';
+}
+
+.dropdown-menu-arrow-left {
+    margin-left:8px;
+}
+
+.dropdown-menu-arrow-left:before {
+    top: 9px;
+    left: -7px;
+    border:none;
+    border-top: 7px solid transparent;
+    border-right: 7px solid $dropdown-border;
+    border-bottom: 7px solid transparent;
+}
+
+.dropdown-menu-arrow-left:after {
+    top: 10px;
+    left: -6px;
+    border:none;
+    border-top: 6px solid transparent;
+    border-right: 6px solid $dropdown-bg;
+    border-bottom: 6px solid transparent;
+}

@@ -1,0 +1,46 @@
+{
+    "env": {
+        "browser": true
+    },
+    "globals": {
+        "google": true,
+        "LOCALIZED_STRINGS": true,
+        "GOOGLE_API_KEY": true,
+        "PUBNUB": true,
+        "Modernizr": true,
+        "URL": true,
+        "PubNub": true
+    },
+    "extends": "airbnb",
+    "rules": {
+        "indent": [
+            "error",
+            4,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "import/no-extraneous-dependencies": "off",
+        "import/no-unresolved": "off",
+        "comma-dangle": [
+            "error",
+            {
+                "arrays": "always-multiline",
+                "objects": "always-multiline",
+                "imports": "always-multiline",
+                "exports": "always-multiline",
+                "functions": "ignore"
+            }
+        ],
+        "react/jsx-indent-props": ["error", 4],
+        "react/jsx-indent": ["error", 4],
+        "react/prefer-es6-class": "off",
+        "react/forbid-prop-types": "off",
+        "jsx-a11y/href-no-hash": "off",
+        "no-param-reassign": ["error", { "props": false }]
+    }
+}
