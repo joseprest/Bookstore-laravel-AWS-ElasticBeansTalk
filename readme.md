@@ -35,7 +35,7 @@ See here for installation : https://github.com/airbnb/javascript/tree/master/pac
 # Déploiement
 
 ## Déployer sur stage
-L'adresse du stage est http://stage.manivelle.io
+L'adresse du stage est http://stage
 
 ### Déployer le backend
 1. Vérifier qu'on est dans la branche `develop` de `backend`
@@ -44,7 +44,7 @@ L'adresse du stage est http://stage.manivelle.io
 4. `gulp build`
 5. Commiter les changements
 6. `envoy run deploy`
-7. S'il n'y a pas de messages d'erreurs, la page est disponible http://stage.manivelle.io
+7. S'il n'y a pas de messages d'erreurs, la page est disponible http://stage
 
 ### Déployer le worker
 1. Vérifier qu'on est dans la branche `develop`
@@ -54,14 +54,14 @@ L'adresse du stage est http://stage.manivelle.io
 
 
 ## Déployer sur prod
-L'adresse du prod est http://clients.manivelle.io. Quand on est bien certain que tout est beau sur stage, on peut déployer sur prod.
+L'adresse du prod est http://clients. Quand on est bien certain que tout est beau sur stage, on peut déployer sur prod.
 
 ### Déployer le backend
 1. Vérifier qu'on est dans la branche `develop` de `backend`
 2. `./release.sh` (ce script fait toutes les étapes plus haut, composer, npm, build, etc...)
 3. Vérifier qu'on est dans la branche `master` de `backend`
 6. `envoy run deploy`
-7. S'il n'y a pas de messages d'erreurs, la page est disponible http://clients.manivelle.io
+7. S'il n'y a pas de messages d'erreurs, la page est disponible http://clients.
 
 ### Déployer le worker
 1. Vérifier qu'on est dans la branche `master`
